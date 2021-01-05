@@ -94,8 +94,8 @@ for i in range(1,df_length):
     for j in range(5):
         count_matrix[y,neighbor_matrix[x,j]] = count_matrix[y,neighbor_matrix[x,j]] + 1
 
-#now1 = df.tail(1)
-now = df.iloc[len(df),0]
+now1 = df.tail(1)
+now = now1.iloc[0,0]
 next_numbers = count_matrix[now,:]
 for l in range(38):
     m = results_matrix[l,0]   
